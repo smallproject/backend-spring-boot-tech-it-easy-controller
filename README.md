@@ -55,8 +55,9 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 We returnen nu bij een aantal RequestMappings de String "television". Uiteindelijk is het de bedoeling dat we data uit een database gaan returnen. 
 Voor nu is dat nog onbekend terrein, maar we kunnen wel doen alsof we een database hebben.  
 - Maak in je controller class een Lijst van Strings genaamd "televisionDataBase", dit gaat dienen als onze database. 
-- Zorg dat je GET requests de juiste data returnen uit de lijst.
+- Zorg dat je GET requests de juiste data returnen uit de lijst. (Gebruik de "id" PathVariable als index van de lijst)
 - Zorg dat je POST request een nieuwe string aan de lijst toevoegd. (denk bijvoorbeeld aan een merknaam of typenaam van een tv)
 - Zorg dat je PUT request de string op positie x in de "database" wijzigt. (gebruik hier de index van de lijst)
 - Zorg dat je DELETE request de string op positie x in de "database" verwijderd. (verwijderen kun je het makkelijst nabootsen door de waarde naar null zet)
+- Maak een extra methode in je ExceptionController class waarin je de IndexOutOfBoundsException opvangt. (Hiermee kunnen we een bericht sturen naar de gebruiker als deze een GET-request doet met een id dat groter is dan de lengte van de database-lijst.)
 
