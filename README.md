@@ -30,15 +30,10 @@ De opdracht moet voldoen aan de volgende voorwaarden:
 ### Belangrijk
 Bij het inleveren van deze opdracht is de applicatie nog niet functioneel, omdat we hier meer kennis over andere technieken voor nodig hebben die later in de cursus aan bod komt.
 
-Je mag de volgende return fragmenten gebruiken:
-  - `ResponseEntiteit.ok()`
-  - `ResponseEntiteit.created()`
-  - `ResponseEntiteit.noContent()`
-
-Door het gebruik van deze return fragmenten zul je de volgende foutmeldingen tegenkomen:
-- `incompatible types found`
-- `created .... cannot be applied to ()`
-Deze mag je negeren tijdens het maken van deze opdracht.
+Je mag de volgende ResponseEntiteiten als return waardes gebruiken:
+  - `ResponseEntiteit.ok("television")`
+  - `ResponseEntiteit.created(null).body("television")`
+  - `ResponseEntiteit.noContent().build()`
 
 ## Stappenplan
 _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet zo goed weten waar je moet beginnen, kun je onderstaand stappenplan volgen:
@@ -48,11 +43,20 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 3. Maak een nieuwe map aan in je project genaamd Exceptions.
 4. Maak een nieuwe klasse aan in de map Controllers voor de TelevisionController.
 5. Voorzie de klasse van de juiste annotatie.
-6. Maak in de klasse de gevraagde requests aan met de juiste response entities.
+6. Maak in de klasse de (in de randvoorwaarden) gevraagde requests aan met de juiste response entities.
 7. Maak een nieuwe klasse aan in de map Controllers voor de ExceptionController.
 8. Voorzie de klasse van de juiste annotatie.
 9. Maak in de klasse een exceptionHandler met de juiste notatie en response entitiy.
 10. Maak een nieuwe klasse aan in de map Exceptions.
 11. Extent de klasse met de RunTimeException.
 12. Vul de klasse aan aan de hand van het voorbeeld in hoofdstuk 5.11 van de cursus Spring Boot.
+
+## Bonus opdracht
+We returnen nu bij een aantal RequestMappings de String "television". Uiteindelijk is het de bedoeling dat we data uit een database gaan returnen. 
+Voor nu is dat nog onbekend terrein, maar we kunnen wel doen alsof we een database hebben.  
+- Maak in je controller class een Lijst van Strings genaamd "televisionDataBase", dit gaat dienen als onze database. 
+- Zorg dat je GET requests de juiste data returnen uit de lijst.
+- Zorg dat je POST request een nieuwe string aan de lijst toevoegd. (denk bijvoorbeeld aan een merknaam of typenaam van een tv)
+- Zorg dat je PUT request de string op positie x in de "database" wijzigt. (gebruik hier de index van de lijst)
+- Zorg dat je DELETE request de string op positie x in de "database" verwijderd. (verwijderen kun je het makkelijst nabootsen door de waarde naar null zet)
 
