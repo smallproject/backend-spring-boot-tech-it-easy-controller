@@ -28,7 +28,7 @@ De opdracht moet voldoen aan de volgende voorwaarden:
   - een exception met message
 
 ### Belangrijk
-Bij het inleveren van deze opdracht is de applicatie nog niet functioneel, omdat we hier meer kennis over andere technieken voor nodig hebben die later in de cursus aan bod komt.
+Bij het inleveren van deze opdracht is de applicatie nog niet geheel functioneel, omdat we hier meer kennis over andere technieken voor nodig hebben die later in de cursus aan bod komt. 
 
 Je mag de volgende ResponseEntiteiten als return waardes gebruiken:
   - `ResponseEntiteit.ok("television")`
@@ -58,6 +58,10 @@ Voor nu is dat nog onbekend terrein, maar we kunnen wel doen alsof we een databa
 - Zorg dat je GET requests de juiste data returnen uit de lijst. (Gebruik de "id" PathVariable als index van de lijst)
 - Zorg dat je POST request een nieuwe string aan de lijst toevoegd. (denk bijvoorbeeld aan een merknaam of typenaam van een tv)
 - Zorg dat je PUT request de string op positie x in de "database" wijzigt. (gebruik hier de index van de lijst)
-- Zorg dat je DELETE request de string op positie x in de "database" verwijderd. (verwijderen kun je het makkelijst nabootsen door de waarde naar null zet)
+- Zorg dat je DELETE request de string op positie x in de "database" verwijderd. (verwijderen kun je het best nabootsen door de waarde naar null wijzigen, net als bij PUT)
 - Maak een extra methode in je ExceptionController class waarin je de IndexOutOfBoundsException opvangt. (Hiermee kunnen we een bericht sturen naar de gebruiker als deze een GET-request doet met een id dat groter is dan de lengte van de database-lijst.)
+
+## Bonus bonus
+- Maak in de ExceptionController geen methode die IndexOUtOfBoundsException afvangt, maar zorg dat je door het throwen van RecordNotFoundException in je controller geen foutmeldingen krijgt als je in postman een verkeerde input geeft (bijvoorbeeld id 5 terwijl je maar 2 items in je lijst hebt)
+- Maak een nieuwe exeption met een passende naam die je opgooit als de gebruiker een tv wil posten waarvan de naam langer is dan 20 letters. Pas deze exception toe in de POST mapping en in de ExceptionHandler. Geef ook een passende message en HTTPSTATUS mee in de Controller/ExceptionHandler.
 
