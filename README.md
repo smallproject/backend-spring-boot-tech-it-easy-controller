@@ -10,8 +10,8 @@ Gedurende de cursus Spring Boot zal het langzamerhand duidelijk worden waarom je
 ## Randvoorwaarden
 De opdracht moet voldoen aan de volgende voorwaarden:
 
-- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `Controllers`;
-- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `Exceptions`;
+- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `controllers`;
+- Het project bevat, op de juiste plaats in de map-structuur, een map genaamd `exceptions`;
 - Het project bevat een `TelevisionsController`;
 - Het project bevat een `ExceptionController`;
 - Het project bevat een `RecordNotFoundException`;
@@ -39,15 +39,15 @@ Je mag de volgende ResponseEntiteiten als return waardes gebruiken:
 _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet zo goed weten waar je moet beginnen, kun je onderstaand stappenplan volgen:
 
 1. Zet een nieuw project op via Spring Boot Initialzr genaamd TechItEasy.
-2. Maak een nieuwe map aan in je project genaamd Controllers.
-3. Maak een nieuwe map aan in je project genaamd Exceptions.
-4. Maak een nieuwe klasse aan in de map Controllers voor de TelevisionController.
+2. Maak een nieuwe map aan in je project genaamd controllers.
+3. Maak een nieuwe map aan in je project genaamd exceptions.
+4. Maak een nieuwe klasse aan in de map controllers voor de TelevisionController.
 5. Voorzie de klasse van de juiste annotatie.
 6. Maak in de klasse de (in de randvoorwaarden) gevraagde requests aan met de juiste response entities.
-7. Maak een nieuwe klasse aan in de map Controllers voor de ExceptionController.
+7. Maak een nieuwe klasse aan in de map controllers voor de ExceptionController.
 8. Voorzie de klasse van de juiste annotatie.
 9. Maak in de klasse een exceptionHandler met de juiste notatie en response entitiy.
-10. Maak een nieuwe klasse aan in de map Exceptions.
+10. Maak een nieuwe klasse aan in de map exceptions.
 11. Extent de klasse met de RunTimeException.
 12. Vul de klasse aan aan de hand van het voorbeeld in hoofdstuk 5.11 van de cursus Spring Boot.
 
@@ -63,5 +63,5 @@ Voor nu is dat nog onbekend terrein, maar we kunnen wel doen alsof we een databa
 
 ## Bonus bonus
 - Maak in de ExceptionController geen methode die IndexOUtOfBoundsException afvangt, maar zorg dat je door het throwen van RecordNotFoundException in je controller geen foutmeldingen krijgt als je in postman een verkeerde input geeft (bijvoorbeeld id 5 terwijl je maar 2 items in je lijst hebt)
-- Maak een nieuwe exeption met een passende naam die je opgooit als de gebruiker een tv wil posten waarvan de naam langer is dan 20 letters. Pas deze exception toe in de POST mapping en in de ExceptionHandler. Geef ook een passende message en HTTPSTATUS mee in de Controller/ExceptionHandler.
+- Maak een nieuwe exeption met een passende naam die je opgooit als de gebruiker een tv wil posten waarvan de naam langer is dan 20 letters. Pas deze exception toe in de POST mapping en in de ExceptionHandler. Geef ook een passende message en HTTPSTATUS mee in de controller/ExceptionHandler.
 
