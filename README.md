@@ -49,7 +49,7 @@ _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet z
 9. Maak in de klasse een exceptionHandler met de juiste notatie en response entitiy.
 10. Maak een nieuwe klasse aan in de map exceptions.
 11. Extent de klasse met de RunTimeException.
-12. Vul de klasse aan aan de hand van het voorbeeld in hoofdstuk 5.11 van de cursus Spring Boot.
+12. Vul de klasse aan aan de hand van het voorbeeld in hoofdstuk 3.4 van de cursus Spring Boot.
 
 ## Bonus opdracht
 We returnen nu bij een aantal RequestMappings de String "television". Uiteindelijk is het de bedoeling dat we data uit een database gaan returnen. 
