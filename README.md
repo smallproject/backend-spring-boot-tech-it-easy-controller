@@ -31,9 +31,9 @@ De opdracht moet voldoen aan de volgende voorwaarden:
 Bij het inleveren van deze opdracht is de applicatie nog niet geheel functioneel, omdat we hier meer kennis over andere technieken voor nodig hebben die later in de cursus aan bod komt. 
 
 Je mag de volgende ResponseEntiteiten als return waardes gebruiken:
-  - `ResponseEntiteit.ok("television")`
-  - `ResponseEntiteit.created(null).body("television")`
-  - `ResponseEntiteit.noContent().build()`
+  - `ResponseEntity.ok("television")`
+  - `ResponseEntity.created(null).body("television")`
+  - `ResponseEntity.noContent().build()`
 
 ## Stappenplan
 _Let op_: het is uitdagender om jouw eigen stappenplan te maken. Mocht je niet zo goed weten waar je moet beginnen, kun je onderstaand stappenplan volgen:
